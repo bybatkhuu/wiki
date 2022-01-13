@@ -1,0 +1,108 @@
+{
+	"workbench.editor.highlightModifiedTabs": true,
+	"explorer.autoReveal": false,
+	"explorer.openEditors.visible": 0,
+	"git.autofetch": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.fontWeight": "500",
+	"editor.renderWhitespace": "all",
+	"editor.renderControlCharacters": true,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"[markdown]":
+	{
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+	"[yaml]":
+	{
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+	"[yml]":
+	{
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+	"files.eol": "\n",
+	"files.trimTrailingWhitespace": true,
+	"files.associations":
+	{
+		"*.env.*": "dotenv",
+		"*.json.example": "json",
+		"requirements*.txt": "pip-requirements"
+	},
+	"files.watcherExclude":
+	{
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/**": true,
+		"**/.hg/store/**": true,
+		"**/.git/**": true,
+		"**/.svn/**": true,
+		"**/.hg/**": true,
+		"**/CVS/**": true,
+		"**/tmp/**": true,
+		"**/dist/**": true,
+		"**/sdist/**": true,
+		"**/env/**": true,
+		"**/venv/**": true,
+		"**/envs/**": true,
+		"**/log/**": true,
+		"**/logs/**": true,
+		"**/bower_components/**": true,
+		"**/.vscode-server/**": true,
+		"**/__pycache__/**": true,
+		"**/.DS_Store": true,
+		"**/*.pyc": true,
+		"**/backup/**": true,
+		"**/backups/**": true,
+		"**/data/**": true,
+		"**/assets/**": true,
+		"**/public/css/libs/**": true,
+		"**/public/js/libs/**": true,
+		"**/public/webfonts/**": true
+	},
+	"files.exclude":
+	{
+		"**/.git": false,
+		"**/.svn": false,
+		"**/.hg": false,
+		"**/CVS": false,
+		"**/.DS_Store": false
+	},
+	"search.exclude":
+	{
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"**/.vscode": true,
+		"**/.idea": true,
+		"**/tmp": true,
+		"**/dist": true,
+		"**/sdist": true,
+		"**/env": true,
+		"**/venv": true,
+		"**/envs": true,
+		"**/log": true,
+		"**/logs": true,
+		"**/log_data": true,
+		"**/.vscode-server": true,
+		"**/*.bak": true,
+		"**/.bak.*": true,
+		"**/backup": true,
+		"**/backups": true,
+		"**/data": true,
+		"**/assets": true,
+		"**/public/css/libs": true,
+		"**/public/js/libs": true,
+		"**/public/webfonts": true
+	},
+	"git-graph.maxDepthOfRepoSearch": 4
+}
