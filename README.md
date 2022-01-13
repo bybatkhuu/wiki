@@ -1,6 +1,6 @@
-# Personal wiki
+# Wiki
 
-Repository for documents and manuals.
+Repository for public wiki pages, documents and manuals.
 
 ## Features
 
