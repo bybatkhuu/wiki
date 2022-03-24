@@ -14,17 +14,28 @@ It's a tool that allows you to manage your applications (Node.js/python/binary/s
 * Environment based configuration
 * PM2 Plus - Advanced features (Web interface, cluster mode, etc...)
 
+## Official pages
+
+* PM2 - [https://pm2.keymetrics.io](https://pm2.keymetrics.io)
+* Quick start guide - [https://pm2.keymetrics.io/docs/usage/quick-start](https://pm2.keymetrics.io/docs/usage/quick-start)
+* Single page guide - [https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page)
+* PM2 npm - [https://www.npmjs.com/package/pm2](https://www.npmjs.com/package/pm2)
+* PM2 logrotate - [https://www.npmjs.com/package/pm2-logrotate](https://www.npmjs.com/package/pm2-logrotate)
+
 ---
 
 ## Prerequisites
 
 * **Node.js**
-    * **NVM [RECOMMENDED]** - [https://github.com/bybatkhuu/wiki/blob/main/nvm.md](https://github.com/bybatkhuu/wiki/blob/main/nvm.md)
+    * **[RECOMMENDED] NVM** - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvm.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvm.md)
 
 ## Installation
 
 ```bash
+# Install PM2 through NPM:
 npm install -g pm2
+
+# Install pm2-logrotate to rotate logs for PM2:
 pm2 install pm2-logrotate
 
 # Check PM2 is running and check version:
@@ -32,7 +43,7 @@ pm2 ping
 pm2 -v
 ```
 
-:sparkles: :+1:
+:sparkles:
 
 ## INSTALLATION COMPLETE
 
@@ -126,17 +137,16 @@ pm2 --help
 
 ## PM2 plus
 
-[https://pm2.io/docs/plus/overview](https://pm2.io/docs/plus/overview)
+* PM2 plust overview - [https://pm2.io/docs/plus/overview](https://pm2.io/docs/plus/overview)
 
 ---
 
 ## References
 
-* [https://pm2.keymetrics.io](https://pm2.keymetrics.io)
-* [https://pm2.keymetrics.io/docs/usage/quick-start](https://pm2.keymetrics.io/docs/usage/quick-start)
-* [https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page)
-* [https://pm2.keymetrics.io/docs/usage/application-declaration](https://pm2.keymetrics.io/docs/usage/application-declaration)
-* [https://pm2.keymetrics.io/docs/usage/startup/](https://pm2.keymetrics.io/docs/usage/startup/)
-* [https://pm2.keymetrics.io/docs/usage/process-metrics](https://pm2.keymetrics.io/docs/usage/process-metrics)
-* [https://pm2.keymetrics.io/docs/usage/cluster-mode](https://pm2.keymetrics.io/docs/usage/cluster-mode)
-* [https://towardsdatascience.com/automate-your-python-script-with-pm2-463238ea0b65](https://towardsdatascience.com/automate-your-python-script-with-pm2-463238ea0b65)
+* Ecosystem file - [https://pm2.keymetrics.io/docs/usage/application-declaration](https://pm2.keymetrics.io/docs/usage/application-declaration)
+* Startup script - [https://pm2.keymetrics.io/docs/usage/startup](https://pm2.keymetrics.io/docs/usage/startup)
+* Logs - [https://pm2.keymetrics.io/docs/usage/log-management](https://pm2.keymetrics.io/docs/usage/log-management)
+* Monitoring - [https://pm2.keymetrics.io/docs/usage/monitoring](https://pm2.keymetrics.io/docs/usage/monitoring)
+* Custom metrics - [https://pm2.keymetrics.io/docs/usage/process-metrics](https://pm2.keymetrics.io/docs/usage/process-metrics)
+* Cluster mode - [https://pm2.keymetrics.io/docs/usage/cluster-mode](https://pm2.keymetrics.io/docs/usage/cluster-mode)
+* Automate your python script with PM2 - [https://towardsdatascience.com/automate-your-python-script-with-pm2-463238ea0b65](https://towardsdatascience.com/automate-your-python-script-with-pm2-463238ea0b65)

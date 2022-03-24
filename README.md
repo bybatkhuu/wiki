@@ -7,7 +7,7 @@ Repository for public wiki pages, documents and manuals.
 * Installations
 * Manuals
 * Wiki pages
-* Tool tips
+* Tooltips
 * Best practices
 * Code snippets
 * Code conventions
@@ -17,11 +17,43 @@ Repository for public wiki pages, documents and manuals.
 
 ---
 
-## Installations
+## Manuals
 
-* Miniconda - [https://github.com/bybatkhuu/wiki/blob/main/miniconda.md](https://github.com/bybatkhuu/wiki/blob/main/miniconda.md)
-* NVM - [https://github.com/bybatkhuu/wiki/blob/main/nvm.md](https://github.com/bybatkhuu/wiki/blob/main/nvm.md)
-* PM2 - [https://github.com/bybatkhuu/wiki/blob/main/pm2.md](https://github.com/bybatkhuu/wiki/blob/main/pm2.md)
-* Install NVIDIA GPU Driver on Linux - [https://github.com/bybatkhuu/wiki/blob/main/install-nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/install-nvidia-driver-linux.md)
-* Install Docker on Linux - [https://github.com/bybatkhuu/wiki/blob/main/install-docker-linux.md](https://github.com/bybatkhuu/wiki/blob/main/install-docker-linux.md)
-* Install Docker on Windows - [https://github.com/bybatkhuu/wiki/blob/main/install-docker-windows.md](https://github.com/bybatkhuu/wiki/blob/main/install-docker-windows.md)
+* Linux group - [https://github.com/bybatkhuu/wiki/blob/main/manuals/linux-group.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/linux-group.md)
+* Linux user - [https://github.com/bybatkhuu/wiki/blob/main/manuals/linux-user.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/linux-user.md)
+* Docker commands - [https://github.com/bybatkhuu/wiki/blob/main/manuals/docker-commands.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/docker-commands.md)
+
+### Installations
+
+* Miniconda (Python) - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/miniconda.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/miniconda.md)
+* NVM (Node.js) - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvm.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvm.md)
+* PM2 - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/pm2.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/pm2.md)
+* Oh My Zsh - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/oh-my-zsh.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/oh-my-zsh.md)
+* Vim Vundle - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/vim-vundle.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/vim-vundle.md)
+* Install NVIDIA GPU Driver on Linux - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
+* Install NVIDIA CUDA on Linux - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/cuda-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/cuda-linux.md)
+* Install Docker on Linux - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-linux.md)
+* Install Docker on Windows - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-windows.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-windows.md)
+* Docker BuildX (Linux) - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-buildx-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-buildx-linux.md)
+
+### Publish
+
+* PyPI - [https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/pypi.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/pypi.md)
+* Push docker image - [https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/docker-image.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/docker-image.md)
+
+### Tooltips
+
+* Divide partition for Linux boot - [https://github.com/bybatkhuu/wiki/blob/main/manuals/tooltips/divide-partition-linux-boot.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/tooltips/divide-partition-linux-boot.md)
+* VS Code extensions - [https://github.com/bybatkhuu/wiki/blob/main/manuals/tooltips/vscode-extensions.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/tooltips/vscode-extensions.md)
+* Linux user password - [https://github.com/bybatkhuu/wiki/blob/main/manuals/tooltips/linux-user-password.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/tooltips/linux-user-password.md)
+* Linux network - [https://github.com/bybatkhuu/wiki/blob/main/manuals/tooltips/linux-network.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/tooltips/linux-network.md)
+
+## Sample files
+
+* .bashrc - [https://github.com/bybatkhuu/wiki/blob/main/samples/.bashrc](https://github.com/bybatkhuu/wiki/blob/main/samples/.bashrc)
+* .zshrc - [https://github.com/bybatkhuu/wiki/blob/main/samples/.zshrc](https://github.com/bybatkhuu/wiki/blob/main/samples/.zshrc)
+* .vimrc - [https://github.com/bybatkhuu/wiki/blob/main/samples/.vimrc](https://github.com/bybatkhuu/wiki/blob/main/samples/.vimrc)
+* .tmux.conf - [https://github.com/bybatkhuu/wiki/blob/main/samples/.tmux.conf](https://github.com/bybatkhuu/wiki/blob/main/samples/.tmux.conf)
+* .vscode/settings.json - [https://github.com/bybatkhuu/wiki/blob/main/samples/.vscode/settings.json](https://github.com/bybatkhuu/wiki/blob/main/samples/.vscode/settings.json)
+* sublime-settings - [https://github.com/bybatkhuu/wiki/blob/main/samples/sublime-settings/Preferences.sublime-settings](https://github.com/bybatkhuu/wiki/blob/main/samples/sublime-settings/Preferences.sublime-settings)
+* vscode.extensions.txt - [https://github.com/bybatkhuu/wiki/blob/main/samples/vscode.extensions.txt](https://github.com/bybatkhuu/wiki/blob/main/samples/vscode.extensions.txt)
