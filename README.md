@@ -34,11 +34,11 @@ Repository for public wiki pages, documents and manuals.
 * Install NVIDIA CUDA on Linux - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/cuda-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/cuda-linux.md)
 * Install Docker on Linux - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-linux.md)
 * Install Docker on Windows - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-windows.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-windows.md)
-* Docker BuildX (Linux) - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-buildx-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-buildx-linux.md)
+* Docker buildX (Linux) - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-buildx-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-buildx-linux.md)
 
 ### Publish
 
-* PyPI - [https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/pypi.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/pypi.md)
+* Upload PyPI (Python) package - [https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/pypi.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/pypi.md)
 * Push docker image - [https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/docker-image.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/publish/docker-image.md)
 
 ### Tooltips
@@ -50,10 +50,10 @@ Repository for public wiki pages, documents and manuals.
 
 ## Sample files
 
-* .bashrc - [https://github.com/bybatkhuu/wiki/blob/main/samples/.bashrc](https://github.com/bybatkhuu/wiki/blob/main/samples/.bashrc)
-* .zshrc - [https://github.com/bybatkhuu/wiki/blob/main/samples/.zshrc](https://github.com/bybatkhuu/wiki/blob/main/samples/.zshrc)
-* .vimrc - [https://github.com/bybatkhuu/wiki/blob/main/samples/.vimrc](https://github.com/bybatkhuu/wiki/blob/main/samples/.vimrc)
-* .tmux.conf - [https://github.com/bybatkhuu/wiki/blob/main/samples/.tmux.conf](https://github.com/bybatkhuu/wiki/blob/main/samples/.tmux.conf)
-* .vscode/settings.json - [https://github.com/bybatkhuu/wiki/blob/main/samples/.vscode/settings.json](https://github.com/bybatkhuu/wiki/blob/main/samples/.vscode/settings.json)
-* sublime-settings - [https://github.com/bybatkhuu/wiki/blob/main/samples/sublime-settings/Preferences.sublime-settings](https://github.com/bybatkhuu/wiki/blob/main/samples/sublime-settings/Preferences.sublime-settings)
-* vscode.extensions.txt - [https://github.com/bybatkhuu/wiki/blob/main/samples/vscode.extensions.txt](https://github.com/bybatkhuu/wiki/blob/main/samples/vscode.extensions.txt)
+* .bashrc - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/.bashrc](https://github.com/bybatkhuu/wiki/blob/main/files/samples/.bashrc)
+* .zshrc - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/.zshrc](https://github.com/bybatkhuu/wiki/blob/main/files/samples/.zshrc)
+* .vimrc - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/.vimrc](https://github.com/bybatkhuu/wiki/blob/main/files/samples/.vimrc)
+* .tmux.conf - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/.tmux.conf](https://github.com/bybatkhuu/wiki/blob/main/files/samples/.tmux.conf)
+* .vscode/settings.json - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/.vscode/settings.json](https://github.com/bybatkhuu/wiki/blob/main/files/samples/.vscode/settings.json)
+* sublime-settings - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/sublime-settings/Preferences.sublime-settings](https://github.com/bybatkhuu/wiki/blob/main/files/samples/sublime-settings/Preferences.sublime-settings)
+* vscode.extensions.txt - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/vscode.extensions.txt](https://github.com/bybatkhuu/wiki/blob/main/files/samples/vscode.extensions.txt)

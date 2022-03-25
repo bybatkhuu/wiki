@@ -207,7 +207,7 @@ chsh -s /bin/bash
 
 ### Sample .zshrc file
 
-* .zshrc - [https://github.com/bybatkhuu/wiki/blob/main/samples/.zshrc](https://github.com/bybatkhuu/wiki/blob/main/samples/.zshrc)
+* .zshrc - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/.zshrc](https://github.com/bybatkhuu/wiki/blob/main/files/samples/.zshrc)
 
 ---
 
