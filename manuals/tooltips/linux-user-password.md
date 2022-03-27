@@ -8,7 +8,7 @@
 # Change [USER_NAME] password:
 sudo passwd [USER_NAME]
 # For example:
-sudo passwd user_name
+sudo passwd username
 ```
 
 ## Encrypting password
@@ -30,7 +30,7 @@ echo "my_password1" | openssl passwd -1 -stdin
 # Changing Linux user password with hash password:
 echo -e "[USER_NAME]:[HASH_PASSWORD]" | sudo chpasswd -e
 # For example:
-echo -e "user_name:\$1\$tqgpm8lk\$KiQfge2bKsEacdp9/RM5J0" | sudo chpasswd -e
+echo -e "username:\$1\$tqgpm8lk\$KiQfge2bKsEacdp9/RM5J0" | sudo chpasswd -e
 ```
 
 ## References

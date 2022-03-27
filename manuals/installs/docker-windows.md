@@ -37,17 +37,17 @@
 
 * Open **PowerShell as Administrator** and run:
 
-    ```powershell
-    wsl --install
-    ```
+```powershell
+wsl --install
+```
 
 * **Restart your machine** to complete the WSL install.
 * **Ignore** or set up the newly launched (pop-up) command prompt console for Ubuntu (WSL 2 default distro) installation.
 * Check WSL 2 is installed, open PowerShell and run this command:
 
-    ```powershell
-    wsl -l -v
-    ```
+```powershell
+wsl -l -v
+```
 
 ### 5. Setup Docker Desktop
 
@@ -67,21 +67,21 @@
 * Goto Settings -> Resources -> WSL INTEGRATION -> Check **Enable integration with my default WSL distro**
 * Goto Settings -> Docker Engine -> Add below JSON config to daemon.json:
 
-    ```json
-        "log-opts":
-        {
-            "max-size": "10m",
-            "max-file": "10"
-        },
-    ```
+```json
+    "log-opts":
+    {
+        "max-size": "10m",
+        "max-file": "10"
+    },
+```
 
 * Finally, click on **Apply & Restart** button.
 * Check Docker Desktop is running, open PowerShell and run this command:
 
-    ```powershell
-    docker ps -a
-    docker info
-    ```
+```powershell
+docker ps -a
+docker info
+```
 
 :sparkles:
 
