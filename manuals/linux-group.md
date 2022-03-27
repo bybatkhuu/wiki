@@ -1,18 +1,18 @@
 # Linux group
 
-## [RECOMMENDED] Create new group and add user to it
+## Create new group and add user to it
 
 ```sh
 export NEW_GID=11000
-export NEW_GROUP_NAME=devs
-export USER_NAME=user_name
+export NEW_GROUP=my_group
+export USER_NAME=username
 
-sudo groupadd -f -g ${NEW_GID} ${NEW_GROUP_NAME}
+sudo groupadd -f -g ${NEW_GID} ${NEW_GROUP}
 # Or
-sudo addgroup --gid ${NEW_GID} ${NEW_GROUP_NAME}
+sudo addgroup --gid ${NEW_GID} ${NEW_GROUP}
 
 # Change primary group of user:
-sudo usermod -aG ${NEW_GROUP_NAME} -g ${NEW_GROUP_NAME} ${USER_NAME}
+sudo usermod -aG ${NEW_GROUP} -g ${NEW_GROUP} ${USER_NAME}
 ```
 
 ---
@@ -28,25 +28,25 @@ cat /etc/group
 # List user groups:
 groups [USER_NAME]
 # For example:
-groups user_name
+groups username
 
 # List user groups with GID:
 id [USER_NAME]
 # For example:
-id user_name
+id username
 ```
 
 ### Create new group
 
 ```sh
-sudo groupadd -f -g [NEW_GID] [NEW_GROUP_NAME]
+sudo groupadd -f -g [NEW_GID] [NEW_GROUP]
 # For example:
-sudo groupadd -f -g 11000 new_group_name
+sudo groupadd -f -g 11000 new_group
 
 # Or
-sudo addgroup --gid [NEW_GID] [NEW_GROUP_NAME]
+sudo addgroup --gid [NEW_GID] [NEW_GROUP]
 # For example:
-sudo addgroup --gid 11000 new_group_name
+sudo addgroup --gid 11000 new_group
 ```
 
 ### Add user to group
@@ -56,7 +56,7 @@ Change primary group of user:
 ```sh
 sudo usermod -aG [PRIMARY_GROUP] -g [PRIMARY_GROUP] [USER_NAME]
 # For example:
-sudo usermod -aG primary_group -g primary_group user_name
+sudo usermod -aG primary_group -g primary_group username
 ```
 
 Add user to group (secondary/supplementary):
@@ -64,12 +64,13 @@ Add user to group (secondary/supplementary):
 ```sh
 sudo usermod -aG [SECOND_GROUP] [USER_NAME]
 # For example:
-sudo usermod -aG second_group user_name
+sudo usermod -aG second_group username
 
 # Apply group changes:
 newgrp [SECOND_GROUP]
 # For example:
 newgrp second_group
+
 # Or reboot:
 # sudo shutdown -r now
 ```
@@ -77,9 +78,9 @@ newgrp second_group
 ### Change group name
 
 ```sh
-sudo groupmod -n [NEW_GROUP_NAME] [OLD_GROUP_NAME]
+sudo groupmod -n [NEW_GROUP] [OLD_GROUP]
 # For example:
-sudo groupmod -n new_group_name old_group_name
+sudo groupmod -n new_group old_group
 ```
 
 ### Change group ID (GID)
@@ -95,7 +96,7 @@ sudo groupmod -g 11000 group_name
 ```sh
 sudo gpasswd -d [USER_NAME] [GROUP]
 # For example:
-sudo gpasswd -d user_name group
+sudo gpasswd -d username group
 ```
 
 ### Remove group
@@ -103,7 +104,7 @@ sudo gpasswd -d user_name group
 ```sh
 sudo groupdel -f [GROUP]
 # For example:
-sudo groupdel group
+sudo groupdel -f group
 
 # Or
 sudo delgroup [GROUP]
