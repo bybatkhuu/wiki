@@ -22,6 +22,7 @@ Repository for public wiki pages, documents and manuals.
 * Linux group - [https://github.com/bybatkhuu/wiki/blob/main/manuals/linux-group.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/linux-group.md)
 * Linux user - [https://github.com/bybatkhuu/wiki/blob/main/manuals/linux-user.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/linux-user.md)
 * Docker commands - [https://github.com/bybatkhuu/wiki/blob/main/manuals/docker-commands.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/docker-commands.md)
+* Docker-compose commands - [https://github.com/bybatkhuu/wiki/blob/main/manuals/docker-compose-commands.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/docker-compose-commands.md)
 
 ### Installations
 
