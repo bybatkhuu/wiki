@@ -22,11 +22,12 @@ The clean and light version of anaconda.
 
 ### 1. Download and install **Miniconda (v3)**
 
-For **Linux** or **macOS**:
+* For **Windows**: [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+* For **Linux** or **macOS**:
 
 ```bash
 ## Recommended path to install Miniconda:
-# For example: $HOME/workspaces/runtimes/miniconda3
+# For example: ${HOME}/workspaces/runtimes/miniconda3
 
 ## Linux (x86_64):
 wget https://repo.anaconda.com/miniconda/Miniconda3-py38_4.11.0-Linux-x86_64.sh
@@ -55,11 +56,8 @@ source ~/.bashrc
 # For zsh:
 # Load .zshrc file to init conda into current zsh session:
 source ~/.zshrc
-```
 
-For **Windows**: [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
 
-```bash
 # Clean conda caches:
 conda clean -y -av
 
