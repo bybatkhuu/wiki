@@ -15,6 +15,11 @@
 		"editor.insertSpaces": true,
 		"editor.tabSize": 4
 	},
+	"[python]":
+	{
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
 	"[yaml]":
 	{
 		"editor.insertSpaces": true,
@@ -23,6 +28,11 @@
 	"[yml]":
 	{
 		"editor.insertSpaces": true,
+		"editor.tabSize": 4
+	},
+	"[pug]":
+	{
+		"editor.insertSpaces": false,
 		"editor.tabSize": 4
 	},
 	"files.eol": "\n",
@@ -35,34 +45,36 @@
 	},
 	"files.watcherExclude":
 	{
+		"**/.git/**": true,
 		"**/.git/objects/**": true,
 		"**/.git/subtree-cache/**": true,
-		"**/node_modules/**": true,
-		"**/.hg/store/**": true,
-		"**/.git/**": true,
 		"**/.svn/**": true,
 		"**/.hg/**": true,
+		"**/.hg/store/**": true,
 		"**/CVS/**": true,
-		"**/tmp/**": true,
-		"**/dist/**": true,
-		"**/sdist/**": true,
+		"**/.vscode-server/**": true,
+		"**/.idea": true,
+		"**/node_modules/**": true,
+		"**/bower_components/**": true,
 		"**/env/**": true,
 		"**/venv/**": true,
 		"**/envs/**": true,
+		"**/__pycache__/**": true,
+		"**/dist/**": true,
+		"**/sdist/**": true,
 		"**/log/**": true,
 		"**/logs/**": true,
-		"**/bower_components/**": true,
-		"**/.vscode-server/**": true,
-		"**/__pycache__/**": true,
-		"**/.DS_Store": true,
-		"**/*.pyc": true,
 		"**/backup/**": true,
 		"**/backups/**": true,
 		"**/data/**": true,
-		"**/assets/**": true,
-		"**/public/css/libs/**": true,
-		"**/public/js/libs/**": true,
-		"**/public/webfonts/**": true
+		"**/db/**": true,
+		"**/tmp/**": true,
+		"**/*.pyc": true,
+		"**/*.log": true,
+		"**/*.out": true,
+		"**/*.bak": true,
+		"**/.bak.*": true,
+		"**/.DS_Store": true
 	},
 	"files.exclude":
 	{
@@ -78,31 +90,31 @@
 		"**/.svn": true,
 		"**/.hg": true,
 		"**/CVS": true,
-		"**/.DS_Store": true,
+		"**/.vscode": true,
+		"**/.vscode-server": true,
+		"**/*.code-search": true,
+		"**/.idea": true,
 		"**/node_modules": true,
 		"**/bower_components": true,
-		"**/*.code-search": true,
-		"**/.vscode": true,
-		"**/.idea": true,
-		"**/tmp": true,
-		"**/dist": true,
-		"**/sdist": true,
 		"**/env": true,
 		"**/venv": true,
 		"**/envs": true,
+		"**/__pycache__": true,
+		"**/dist": true,
+		"**/sdist": true,
 		"**/log": true,
 		"**/logs": true,
-		"**/log_data": true,
-		"**/.vscode-server": true,
-		"**/*.bak": true,
-		"**/.bak.*": true,
 		"**/backup": true,
 		"**/backups": true,
 		"**/data": true,
-		"**/assets": true,
-		"**/public/css/libs": true,
-		"**/public/js/libs": true,
-		"**/public/webfonts": true
+		"**/db": true,
+		"**/tmp": true,
+		"**/*.pyc": true,
+		"**/*.log": true,
+		"**/*.out": true,
+		"**/*.bak": true,
+		"**/.bak.*": true,
+		"**/.DS_Store": true
 	},
 	"git-graph.maxDepthOfRepoSearch": 4
 }
