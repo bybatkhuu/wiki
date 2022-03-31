@@ -101,9 +101,7 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker.service
 ```
 
-## 2. [RECOMMENDED] Docker Post-installation
-
-### 2.1. [RECOMMENDED] Limit docker log file max size and max rotation
+### 2. [RECOMMENDED] Limit docker log file max size and max rotation
 
 Edit the `/etc/docker/daemon.json` file:
 
@@ -128,7 +126,32 @@ and add the following `log-opts` into the `/etc/docker/daemon.json` file:
 sudo systemctl restart docker.service
 ```
 
-### 2.2. [OPTIONAL] Change docker data directory to the external storage
+## 3. Install Docker Compose V2
+
+```bash
+## Download docker-compose binary release:
+# [RECOMMENDED] Compose v2.2.3 (Linux) release:
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-$(uname -m)" -o /usr/local/bin/docker-compose
+# [ONLY FOR EXPERIMENTAL] Latest version release:
+# sudo curl -L $(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url | grep linux-$(uname -m)\" | cut -d '"' -f 4) -o /usr/local/bin/docker-compose
+
+# Apply executable permission to the docker-compose binary:
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Create a symbolic link to '/usr/bin':
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+# Check docker-compose version:
+docker-compose --version
+```
+
+:sparkles:
+
+## INSTALLATION COMPLETE
+
+---
+
+## [OPTIONAL] Change docker data directory to the external storage
 
 ```bash
 # Stop the docker service:
@@ -179,32 +202,7 @@ docker ps -a
 sudo rm -rf /var/lib/docker.old
 ```
 
-## 3. [RECOMMENDED] Install Docker Compose V2
-
-```bash
-## Download docker-compose binary release:
-# [RECOMMENDED] Compose v2.2.3 (Linux) release:
-sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-$(uname -m)" -o /usr/local/bin/docker-compose
-# [ONLY FOR EXPERIMENTAL] Latest version release:
-# sudo curl -L $(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url | grep linux-$(uname -m)\" | cut -d '"' -f 4) -o /usr/local/bin/docker-compose
-
-# Apply executable permission to the docker-compose binary:
-sudo chmod +x /usr/local/bin/docker-compose
-
-# Create a symbolic link to '/usr/bin':
-sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-
-# Check docker-compose version:
-docker-compose --version
-```
-
-:sparkles:
-
-## INSTALLATION COMPLETE
-
----
-
-## 4. [OPTIONAL] Install command auto-completion for docker-compose
+## [OPTIONAL] Install command auto-completion for docker-compose
 
 ```bash
 # Download docker-compose auto-completion script into '/etc/bash_completion.d/':
