@@ -16,19 +16,20 @@
 
 ### Check CUDA version compatibility
 
-### Check current linux system specification
+### Check current Linux system specification
 
-* Check NVIDIA GPU is exists:
+* Check NVIDIA GPU exists:
 
 ```bash
+## Use lshw:
+lshw -C display
+
+# Only for Ubuntu/Debian:
 sudo apt-get update --fix-missing -o Acquire::CompressionTypes::Order::=gz
-
-## Use lspci:
-sudo apt-get install -y pciutils
+sudo apt-get install -y pciutils mesa-utils
+# Or use lspci:
 lspci | grep -i vga && lspci | grep -i nvidia
-
-## Or use glxinfo:
-sudo apt-get install -y mesa-utils
+# Or use glxinfo:
 glxinfo | egrep "OpenGL vendor|OpenGL renderer"
 ```
 
@@ -50,23 +51,23 @@ gcc --version && make -v
 ldd --version
 ```
 
-* **[IMPORTANT]** Search and check **latest stable NVIDIA driver version** for **your GPU model(s)**:
+* **[IMPORTANT]** Search and check the **latest stable NVIDIA driver version** for **your GPU model(s)**:
     * NVIDIA driver downloads - [https://www.nvidia.com/Download/Find.aspx?lang=en-us](https://www.nvidia.com/Download/Find.aspx?lang=en-us)
-* **[IMPORTANT]** Check **compatibility** of **NVIDIA driver version** with **CUDA versions**:
+* **[IMPORTANT]** Check the **compatibility** of the **NVIDIA driver version** with **CUDA versions**:
     * CUDA release note -[https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
     * CUDA compatibility PDF - [https://docs.nvidia.com/pdf/CUDA_Compatibility.pdf](https://docs.nvidia.com/pdf/CUDA_Compatibility.pdf)
     * CUDA compatibility - [https://docs.nvidia.com/deploy/cuda-compatibility/#minor-version-compatibility](https://docs.nvidia.com/deploy/cuda-compatibility/#minor-version-compatibility)
 * **[IMPORTANT]** Check **system requirements** for **CUDA versions**:
     * CUDA latest version - [https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements)
     * CUDA older versions archive - [https://developer.nvidia.com/cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive)
-* **[RECOMMENDED]** Check **compute capability** of **your GPU model(s)**:
+* **[RECOMMENDED]** Check the **compute capability** of **your GPU model(s)**:
     * GPU compute capability - [https://developer.nvidia.com/cuda-gpus](https://developer.nvidia.com/cuda-gpus)
     * CUDA wikipedia - [https://en.wikipedia.org/wiki/CUDA](https://en.wikipedia.org/wiki/CUDA)
-* **[RECOMMENDED]** Check **cuDNN version** with **compute capability** of **your GPU model(s)**:
+* **[RECOMMENDED]** Check the **cuDNN version** with **compute capability** of **your GPU model(s)**:
     * cuDNN support matrix - [https://docs.nvidia.com/deeplearning/cudnn/support-matrix/index.html](https://docs.nvidia.com/deeplearning/cudnn/support-matrix/index.html)
-* *[OPTIONAL]* Check **compatibility** of **TensorRT versions** with **CUDA versions** and **cuDNN versions**:
+* *[OPTIONAL]* Check the **compatibility** of **TensorRT versions** with **CUDA versions** and **cuDNN versions**:
     * TensorRT latest version - [https://docs.nvidia.com/deeplearning/tensorrt/support-matrix/index.html](https://docs.nvidia.com/deeplearning/tensorrt/support-matrix/index.html)
-    * TensorRT older verions archives - [https://docs.nvidia.com/deeplearning/tensorrt/archives/index.html](https://docs.nvidia.com/deeplearning/tensorrt/archives/index.html)
+    * TensorRT older versions archives - [https://docs.nvidia.com/deeplearning/tensorrt/archives/index.html](https://docs.nvidia.com/deeplearning/tensorrt/archives/index.html)
 * **[RECOMMENDED]** Check compatible **CUDA versions** for required **machine learning/deep learning frameworks/libraries** you want to use:
     * Tensorflow-gpu - [https://www.tensorflow.org/install/source#gpu](https://www.tensorflow.org/install/source#gpu)
     * Pytorch - [https://pytorch.org/get-started/previous-versions](https://pytorch.org/get-started/previous-versions)
@@ -80,8 +81,8 @@ ldd --version
 
 ### Download CUDA
 
-* **IMPORTANT!** **Download and use the .RUN file!** It can **prevent from installing incompatible NVIDIA driver** and **prevent from overwriting** previous **/usr/local/cuda** (if you installed another CUDA already) symbolic link.
-* **IMPORTANT!** **Don't download or use the .DEB file!** It will **overwrite current default CUDA (if you installed already) directory (/usr/local/cuda)** and also it will **overwrite already installed latest compatible NVIDIA driver version** into **old or incompatible driver**. Moreover, if you **want to use different version of CUDA, never install CUDA by .DEB file!**
+* **IMPORTANT!** **Download and use the .RUN file!** It can **prevent installing incompatible NVIDIA drivers** and **prevent overwriting** the previous **/usr/local/cuda** (if you installed another CUDA already) symbolic link.
+* **IMPORTANT!** **Don't download or use the .DEB file!** It will **overwrite the current default CUDA (if you installed it already) directory (/usr/local/cuda)** and also it will **overwrite the already installed latest compatible NVIDIA driver version** into the **old or incompatible driver**. Moreover, if you **want to use a different version of CUDA, never install CUDA.DEB file!**
 * Search and download the required version of CUDA (**cuda_\*\*\*_linux.run**) installer file from this link: [https://developer.nvidia.com/cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive)
 * If you're using a command-line interface, just copy the download link from the NVIDIA website and use wget to download. For example:
 
@@ -99,8 +100,8 @@ wget https://developer.download.nvidia.com/compute/cuda/11.0.3/local_installers/
 When installing CUDA.run, follow the below steps:
 
 * Type '**accept**' and **ENTER**.
-* **IMPORTANT!** Uncheck and disable NVIDIA driver installation to prevent overwriting already installed latest compatible version of NVIDIA driver to old or incompatible driver.
-* **IMPORTANT!** Uncheck and disable CUDA symbolic link installation to prevent overwriting current default CUDA (if you installed already) directory (/usr/local/cuda).
+* **IMPORTANT!** Uncheck and disable NVIDIA driver installation to prevent overwriting already installed latest compatible version of NVIDIA driver into an old or incompatible driver.
+* **IMPORTANT!** Uncheck and disable CUDA symbolic link installation to prevent overwriting the current default CUDA (if you installed it already) directory (/usr/local/cuda).
 * Choose install and press it!
 
 ```bash
@@ -128,7 +129,7 @@ Edit the `~/.bashrc` file:
 nano ~/.bashrc
 ```
 
-and add the following lines into the `~/.bashrc` file (don't forget to change **CUDA_VERSION** into installed version):
+and add the following lines into the `~/.bashrc` file (don't forget to change **CUDA_VERSION** into the installed version):
 
 ```bash
 ## CUDA ##
@@ -146,14 +147,14 @@ export CFLAGS="-I${CUDA_PATH}/include ${CFLAGS}"
 ```
 
 ```bash
-# 5. Load .bashrc file to init environment variables into current bash session:
+# 5. Load .bashrc file to init environment variables into the current bash session:
 source ~/.bashrc
 
 # 6. Check CUDA compiler version:
 nvcc -V
 # Or:
 cat ${CUDA_PATH}/version.txt
-# Or
+# Or:
 cat ${CUDA_PATH}/version.json
 ```
 
@@ -161,8 +162,8 @@ cat ${CUDA_PATH}/version.json
 
 ### Download cuDNN
 
-* **IMPORTANT!** **Download and use .TGZ or .TAR.XZ file!** You can install cuDNN into custom directory, which means you can control which version of cuDNN you want to use and where to install it.
-* **IMPORTANT!** **Don't download and use .DEB file!** It will overwrite cuDNN library into current default CUDA directory (/usr/local/cuda).
+* **IMPORTANT!** **Download and use .TGZ or .TAR.XZ file!** You can install cuDNN into a custom directory, which means you can control which version of cuDNN you want to use and where to install it.
+* **IMPORTANT!** **Don't download and use .DEB file!** It will overwrite the cuDNN library into the current default CUDA directory (/usr/local/cuda).
 * Download cuDNN **.TGZ** or **.TAR.XZ** file from this link: [https://developer.nvidia.com/rdp/cudnn-download](https://developer.nvidia.com/rdp/cudnn-download)
 
 ### Install cuDNN .tgz or .tar.xz package files
@@ -205,9 +206,9 @@ cat /usr/local/cuda-${CUDA_VERSION}/include/cudnn_version.h | grep CUDNN_MAJOR -
 
 ### Download TensorRT
 
-* **IMPORTANT!** **Download and use .TAR.GZ file!** You can install TensorRT into custom directory, which means you can control which version of TensorRT you want to use and where to install it.
+* **IMPORTANT!** **Download and use the .TAR.GZ file!** You can install TensorRT into a custom directory, which means you can control which version of TensorRT you want to use and where to install it.
 * **IMPORTANT!** **Don't download and use .DEB file!** You can't control TensorRT libraries.
-* Download cuDNN **.TAR.GZ** file from this link: [https://developer.nvidia.com/nvidia-tensorrt-download](https://developer.nvidia.com/nvidia-tensorrt-download)
+* Download the cuDNN **.TAR.GZ** file from this link: [https://developer.nvidia.com/nvidia-tensorrt-download](https://developer.nvidia.com/nvidia-tensorrt-download)
 
 ### Install TensorRT .tar.gz package files
 
@@ -234,13 +235,15 @@ rm -vrf TensorRT-[TENSORRT_VERSION].[OS_DISTRO].x86_64-gnu.cuda-[CUDA_VERSION].c
 rm -vrf TensorRT-7.2.0.14.Ubuntu-18.04.x86_64-gnu.cuda-11.0.cudnn8.0.tar.gz
 ```
 
+Edit the `~/.bashrc` file:
+
 ```bash
 # Add TensorRT environment variables into current user .bashrc file:
 # (It loads environment variables, whenever current user opens a new bash session/new terminal)
 nano ~/.bashrc
 ```
 
-and add the following lines into the `~/.bashrc` file (don't forget to change **TENSORRT_VERSION** into installed version):
+and add the following lines into the `~/.bashrc` file (don't forget to change **TENSORRT_VERSION** into the installed version):
 
 ```bash
 ## TensorRT ##

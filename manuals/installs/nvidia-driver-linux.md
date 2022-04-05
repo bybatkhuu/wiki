@@ -51,11 +51,11 @@ sudo apt-get autoremove -y
 sudo apt-get install -y build-essential pkg-config libglvnd-dev mesa-utils wget dkms
 ```
 
-### Download appropriate Linux driver for current NVIDIA GPU model
+### Download the appropriate Linux driver for the current NVIDIA GPU model
 
 * Search and download the latest verified stable NVIDIA GPU driver (**NVIDIA-Linux-x86_64-\*\*\*.run**) installer file from this link: **[https://www.nvidia.com/Download/Find.aspx?lang=en-us](https://www.nvidia.com/Download/Find.aspx?lang=en-us)**
-* **IMPORTANT!** **Download and use the .RUN file!** It can install NVIDIA driver with **DKMS module**, which is really important!
-* **IMPORTANT!** **Don't download or use the .DEB file!** It will **BREAK** the kernel eventually, especially when kernel header/version/module is upgraded, which is so **FRUSTRATING!** Therefore, sometimes conflict with other application **dependencies** (dependency hell)...
+* **IMPORTANT!** **Download and use the .RUN file!** It can install the NVIDIA driver with the **DKMS module**, which is really important!
+* **IMPORTANT!** **Don't download or use the .DEB file!** It will **BREAK** the kernel eventually, especially when the kernel header/version/module is upgraded, which is so **FRUSTRATING!** Therefore, sometimes conflict with other application **dependencies** (dependency hell)...
 * If you're using a command-line interface, just copy the download link and use wget to download. For example:
 
 ```bash
@@ -72,9 +72,9 @@ wget https://us.download.nvidia.com/XFree86/Linux-x86_64/510.54/NVIDIA-Linux-x86
 
 #### [IMPORTANT] Change GUI environment to console environment
 
-* **Skip this step to 11, if you're not using GUI environment and already using console environment or SSH**
-* **TIP:** From here you're going to enter to the console environment, so you need to write down these below commands on some text file to read from command-line or note on somewhere!
-* You can change GUI environment to virtual console environment by pressing these keyboard buttons: **Ctrl + Alt + F1/F3**
+* **Skip this step to 11, if you're not using a GUI environment and already using a console environment or SSH**
+* **TIP:** From here you're going to enter the console environment, so you need to write down these below commands on some text file to read from command-line or note on somewhere!
+* You can change the GUI environment to a virtual console environment by pressing these keyboard buttons: **Ctrl + Alt + F1/F3**
 * Or by entering the Linux command:
 
 ```bash
@@ -86,7 +86,7 @@ sudo chvt 3
 
 * Enter username and password to log in to a console environment
 
-#### Stop GUI processes to prepare the installation of NVIDIA GPU driver
+#### Stop GUI processes to prepare the installation of the NVIDIA GPU driver
 
 ```bash
 # 11. Stop GUI service (lightdm/gdm/gdm3/kdm/slim/etc..):
@@ -111,8 +111,8 @@ chmod +x ./NVIDIA-Linux-x86_64-510.54.run
 ### Install NVIDIA driver.run file
 
 * **IMPORTANT!** (**--dkms**) Register Nvidia driver to the DKMS for future kernel upgrade.
-* **IMPORTANT!** (**--no-x-check**) Disable X11 config checker to prevent triggering X11 (GUI) processes while installing the driver.
-* **IMPORTANT!** (**--no-cc-version-check**) Disable C/C++ version checker to prevent install error occurs when DKMS C/C++ version is not matching with current installed C/C++ version!
+* **IMPORTANT!** (**--no-x-check**) Disable the X11 config checker to prevent triggering X11 (GUI) processes while installing the driver.
+* **IMPORTANT!** (**--no-cc-version-check**) Disable the C/C++ version checker to prevent install error occurs when the DKMS C/C++ version is not matching with the current installed C/C++ version!
 
 ```bash
 # 14. IMPORTANT! Install nvidia driver with appropriate arguments:
@@ -141,10 +141,12 @@ nvidia-smi
 
 ## Post-installation
 
-### [RECOMMENDED] Setup nvidia-persistence mode daemon (For Deep Learning)
+### [Only for ML/DL server] Setup nvidia-persistence mode daemon
+
+Not recommended: GPU that is used by X11/Wayland processes (for GUI rendering).
 
 ```bash
-# Install git to clone
+# Install git to clone:
 sudo apt-get install -y ssh git
 
 # Download nvidia-persistenced source code from github:
@@ -169,7 +171,7 @@ systemctl status nvidia-persistenced.service
 
 ---
 
-## [OPTIONAL] Install NVIDIA GPU monitoring tool
+## [OPTIONAL] Install the NVIDIA GPU monitoring tool
 
 ### :star2::satellite: nvitop
 
@@ -177,7 +179,7 @@ systemctl status nvidia-persistenced.service
 # Install python3 and pip3 packages:
 sudo apt-get install -y python3 python3-pip
 
-# Install nvitop into system python3 packges:
+# Install nvitop into system python3 packages:
 sudo pip3 install nvitop
 
 # Check nvitop:
@@ -216,14 +218,14 @@ nvtop
 
 ---
 
-## Re-install or upgrade NVIDIA driver to latest version
+## Re-install or upgrade the NVIDIA driver to the latest version
 
 ### Remove DKMS NVIDIA modules
 
-**Skip this step, if you didn't install NVIDIA driver with DKMS.**
+**Skip this step, if you didn't install the NVIDIA driver with DKMS.**
 
 ```bash
-# Check current dkms nvidia modules, versions and kernels:
+# Check current dkms nvidia modules, versions, and kernels:
 # [TIP]: Use module versions to remove.
 dkms status | grep nvidia
 
@@ -233,9 +235,9 @@ sudo dkms remove nvidia/[DRIVER_VERSION] --all
 sudo dkms remove nvidia/510.54 --all
 ```
 
-### Disable nvidia-persistenced service daemon
+### Disable the nvidia-persistenced service daemon
 
-**Skip this step, if you didn't setup nvidia-persistenced daemon.**
+**Skip this step, if you didn't setup the nvidia-persistenced daemon.**
 
 ```bash
 # Stop and disable nvidia-persistenced service daemon:
@@ -254,14 +256,8 @@ sudo nvidia-uninstall
 sudo shutdown -r now
 ```
 
-### Install latest NVIDIA driver version
+### Install the latest NVIDIA driver version
 
 Install NVIDIA driver again (start from the beginning) - [#install-nvidia-gpu-driver](#install-nvidia-gpu-driver)
 
 ---
-
-## References
-
-* nvitop - [https://github.com/XuehaiPan/nvitop](https://github.com/XuehaiPan/nvitop)
-* nvitop pypi - [https://pypi.org/project/nvitop](https://pypi.org/project/nvitop)
-* NVTOP - [https://github.com/Syllo/nvtop](https://github.com/Syllo/nvtop)
