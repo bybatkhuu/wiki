@@ -14,8 +14,6 @@
 
 ## Prerequisites
 
-### Check CUDA version compatibility
-
 ### Check current Linux system specification
 
 * Check NVIDIA GPU exists:
@@ -50,6 +48,8 @@ gcc --version && make -v
 ## Check glibc version:
 ldd --version
 ```
+
+### Check CUDA version compatibility
 
 * **[IMPORTANT]** Search and check the **latest stable NVIDIA driver version** for **your GPU model(s)**:
     * NVIDIA driver downloads - [https://www.nvidia.com/Download/Find.aspx?lang=en-us](https://www.nvidia.com/Download/Find.aspx?lang=en-us)
