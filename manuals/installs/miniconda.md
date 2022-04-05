@@ -105,7 +105,7 @@ pip -V
 
 ---
 
-## Additionals
+## Usage
 
 ### Viewing a list of the packages in a conda environment
 
