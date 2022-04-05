@@ -1,4 +1,4 @@
-# Install NVIDIA GPU driver on Ubuntu/Debian
+# Install NVIDIA GPU driver on Linux (Ubuntu/Debian)
 
 ## Official pages
 
