@@ -259,5 +259,3 @@ sudo shutdown -r now
 ### Install the latest NVIDIA driver version
 
 Install NVIDIA driver again (start from the beginning) - [#install-nvidia-gpu-driver](#install-nvidia-gpu-driver)
-
----
