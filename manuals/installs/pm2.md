@@ -31,14 +31,14 @@ It's a tool that allows you to manage your applications (Node.js/python/binary/s
 
 ## Installation
 
-```bash
+```sh
 # Install PM2 through NPM:
 npm install -g pm2
 
 # Install pm2-logrotate to rotate logs for PM2:
 pm2 install pm2-logrotate
 
-# Check PM2 is running and check version:
+# Check PM2 is running and check the version:
 pm2 ping
 pm2 -v
 ```
@@ -51,23 +51,23 @@ pm2 -v
 
 ## Run application
 
-```bash
+```sh
 ## Start node.js application in the background:
 pm2 start app.js
 
 ## Start shell script app with naming "script-app":
 pm2 start script.sh -n script-app
 
-## Start python application and watch for changes:
+## Start the python application and watch for changes:
 pm2 start python-app.py --watch
 
 ## Start binary file with arguments (--port 8080):
 pm2 start binary-file -- --port 8080
 
 ## Use ecosystem configuration file:
-# Generate simple ecosystem.config.js file:
+# Generate a simple ecosystem.config.js file:
 pm2 init simple
-# Update ecosystem.config.js file accarding to your needs:
+# Update the ecosystem.config.js file according to your needs:
 vi ecosystem.config.js
 # Start ecosystem.config.js:
 pm2 start ecosystem.config.js
@@ -81,44 +81,44 @@ pm2 start pm2-process.yml --log /path/to/logs
 
 ## Check logs
 
-```bash
+```sh
 pm2 logs app-name --lines 50
 ```
 
 ## Restart application
 
-```bash
+```sh
 pm2 restart app-name
 ```
 
-## Shows a list of application registered into PM2
+## Shows a list of applications registered into PM2
 
-```bash
+```sh
 pm2 list
 ```
 
 ## Monitor applications
 
-```bash
+```sh
 pm2 monit
 ```
 
-## Stop and delete application
+## Stop and delete the application
 
-```bash
+```sh
 pm2 stop app-name
 pm2 del app-name
 ```
 
 ## Generate ecosystem.config.js file
 
-```bash
+```sh
 pm2 ecosystem
 ```
 
 ## Startup application on system reboot
 
-```bash
+```sh
 pm2 startup
 
 ## Run according to shown command!
@@ -131,13 +131,13 @@ pm2 save
 
 ## Help
 
-```bash
+```sh
 pm2 --help
 ```
 
 ## PM2 plus
 
-* PM2 plust overview - [https://pm2.io/docs/plus/overview](https://pm2.io/docs/plus/overview)
+* PM2 plus overview - [https://pm2.io/docs/plus/overview](https://pm2.io/docs/plus/overview)
 
 ---
 

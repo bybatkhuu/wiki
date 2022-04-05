@@ -20,7 +20,7 @@ NVM is a tool for managing multiple versions of Node.js.
 
 ### 1. Download and install **NVM (v0.39.1)**
 
-```bash
+```sh
 ## Recommended path to install NVM:
 # Set and export `NVM_DIR` environment variable. For example:
 mkdir -vp ~/workspaces/runtimes/.nvm
@@ -45,7 +45,7 @@ nvm --version
 
 ### 2. Install **Node.js**
 
-```bash
+```sh
 # Install Node.js, update NPM to latest, and set default Node.js:
 nvm install --latest-npm --alias=default 16.14.2
 # Set to use default Node.js:
