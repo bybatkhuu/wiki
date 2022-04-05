@@ -129,7 +129,7 @@ Edit the `~/.bashrc` file:
 nano ~/.bashrc
 ```
 
-and add the following lines into the `~/.bashrc` file (don't forget to change **CUDA_VERSION** into the installed version):
+and add the following lines into the `~/.bashrc` file (don't forget to change **[CUDA_VERSION]** into the installed version):
 
 ```bash
 ## CUDA ##
@@ -243,7 +243,7 @@ Edit the `~/.bashrc` file:
 nano ~/.bashrc
 ```
 
-and add the following lines into the `~/.bashrc` file (don't forget to change **TENSORRT_VERSION** into the installed version):
+and add the following lines into the `~/.bashrc` file (don't forget to change **[TENSORRT_VERSION]** into the installed version):
 
 ```bash
 ## TensorRT ##
