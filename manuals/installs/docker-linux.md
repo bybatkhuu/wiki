@@ -14,7 +14,7 @@
 
 ## 1. Install Docker
 
-### 1.1. Install Docker with script
+### 1.1. Install Docker with the script
 
 ```bash
 # Download docker installer script:
@@ -26,14 +26,14 @@ DRY_RUN=1 sudo sh get-docker.sh
 rm -vrf get-docker.sh
 
 # To avoid using 'sudo' for docker commands:
-# Create new 'docker' group:
+# Create a new 'docker' group:
 sudo groupadd docker
 # Add current user to the 'docker' group:
 sudo usermod -aG docker $(whoami)
 
 # Apply new group changes to the new shell session:
 newgrp docker
-# Or reboot system to apply docker group changes:
+# Or reboot the system to apply docker group changes:
 sudo shutdown -r now
 
 # Configure docker to start on reboot:
@@ -50,10 +50,10 @@ docker images
 
 * Skip this step, if you don't have NVIDIA GPU!
 * **[REQUIRED]** Install NVIDIA GPU driver: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
-* For Ubuntu and Debian-based linux distros:
+* For Ubuntu/Debian-based Linux distros:
 
 ```bash
-## [IMPORTANT] Only for Ubuntu and Debian-based linux
+## [IMPORTANT] Only for Ubuntu/Debian-based linux
 # Download the nvidia-docker GPG key and setup the stable repository:
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
    && curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add - \
@@ -132,7 +132,9 @@ sudo systemctl restart docker.service
 ## Download docker-compose binary release:
 # [RECOMMENDED] Compose v2.2.3 (Linux) release:
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-$(uname -m)" -o /usr/local/bin/docker-compose
-# [ONLY FOR EXPERIMENTAL] Latest version release:
+# [For old version] Compose v1.29.2 (Linux) release:
+# sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# [Only for experimental] Latest version release:
 # sudo curl -L $(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url | grep linux-$(uname -m)\" | cut -d '"' -f 4) -o /usr/local/bin/docker-compose
 
 # Apply executable permission to the docker-compose binary:
@@ -151,7 +153,7 @@ docker-compose --version
 
 ---
 
-## [OPTIONAL] Change docker data directory to the external storage
+## [OPTIONAL] Change the docker data directory to the external storage
 
 ```bash
 # Stop the docker service:
@@ -164,7 +166,7 @@ Edit the `/etc/docker/daemon.json` file:
 sudo nano /etc/docker/daemon.json
 ```
 
-and add the following `data-root` into the `/etc/docker/daemon.json` file (don't forget to change [NEW_STORAGE_PATH] to your new directory):
+and add the following `data-root` into the `/etc/docker/daemon.json` file (don't forget to change **[NEW_STORAGE_PATH]** to your new directory):
 
 ```json
 {
