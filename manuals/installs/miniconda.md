@@ -1,6 +1,6 @@
 # Miniconda (Conda)
 
-The clean and light version of anaconda.
+The clean and light version of the anaconda.
 
 ## Features
 
@@ -25,7 +25,7 @@ The clean and light version of anaconda.
 * For **Windows**: [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
 * For **Linux** or **macOS**:
 
-```bash
+```sh
 ## Recommended path to install Miniconda:
 # For example: ${HOME}/workspaces/runtimes/miniconda3
 
@@ -70,7 +70,7 @@ conda -V
 
 ### 2. Install **Python**
 
-```bash
+```sh
 # Create a new conda environment with python and pip:
 conda create -y -n py38 python=3.8.12 pip
 
@@ -84,7 +84,7 @@ echo "conda activate py38" >> ~/.zshrc
 # Activate new conda environment:
 conda activate py38
 
-# Upgrade pip to latest version:
+# Upgrade pip to the latest version:
 pip install -U pip
 pip install pytest
 
@@ -109,7 +109,7 @@ pip -V
 
 ### Viewing a list of the packages in a conda environment
 
-```bash
+```sh
 conda list
 
 # Or list packages of other conda environment:
@@ -118,37 +118,37 @@ conda list -n py38
 
 ### Viewing a list of conda environments
 
-```bash
+```sh
 conda env list
 ```
 
 ### Creating environment variables associated with Conda environments
 
-```bash
+```sh
 conda env config vars set PYTHONPATH="${PWD}:${PYTHONPATH}"
 ```
 
 ### Exporting conda environment to environment.yml
 
-```bash
+```sh
 conda env export > environment.yml
 ```
 
 ### Creating conda environment from environment.yml file
 
-```bash
+```sh
 conda env create -f environment.yml
 ```
 
 ### Cloning a conda environment
 
-```bash
+```sh
 conda create -y -n py38_clone --clone py38
 ```
 
 ### Removing conda environment
 
-```bash
+```sh
 conda remove -y -n py38 --all
 ```
 
