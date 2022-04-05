@@ -174,7 +174,7 @@ Configure powerlevel10k:
 p10k configure
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
 ## INSTALLATION COMPLETE
 

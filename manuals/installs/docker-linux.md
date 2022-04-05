@@ -147,7 +147,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
 ## INSTALLATION COMPLETE
 

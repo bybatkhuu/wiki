@@ -83,7 +83,7 @@ docker ps -a
 docker info
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
 ## INSTALLATION COMPLETE
 

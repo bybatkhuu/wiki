@@ -120,7 +120,7 @@ vim
 # :PluginInstall
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
 ## INSTALLATION COMPLETE
 

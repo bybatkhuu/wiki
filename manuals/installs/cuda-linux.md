@@ -307,6 +307,6 @@ rm -rf ~/NVIDIA_CUDA-[CUDA_VERSION]_Samples
 rm -rf ~/NVIDIA_CUDA-11.0_Samples
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
 ## INSTALLATION COMPLETE

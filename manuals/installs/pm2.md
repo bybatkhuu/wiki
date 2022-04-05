@@ -43,7 +43,7 @@ pm2 ping
 pm2 -v
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
 ## INSTALLATION COMPLETE
 

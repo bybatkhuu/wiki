@@ -29,13 +29,15 @@ export NVM_DIR="${HOME}/workspaces/runtimes/.nvm"
 # Install NVM:
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-# For bash:
+
+## For bash:
 # Load .bashrc file to init NVM into current bash session:
 source ~/.bashrc
 
-# For zsh:
+## For zsh:
 # Load .zshrc file to init NVM into current zsh session:
 source ~/.zshrc
+
 
 # Check installed NVM version:
 nvm --version
@@ -45,7 +47,7 @@ nvm --version
 
 ```bash
 # Install Node.js, update NPM to latest, and set default Node.js:
-nvm install --latest-npm --alias=default 16.14.0
+nvm install --latest-npm --alias=default 16.14.2
 # Set to use default Node.js:
 nvm use default
 
@@ -64,9 +66,9 @@ pm2 install pm2-logrotate
 npm cache clean --force
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
-## INSTALLATION COMPLETE
+## INSTALLATION COMPLETE (Linux, macOS)
 
 ---
 
@@ -79,8 +81,8 @@ npm cache clean --force
 ### 2. Install **Node.js** (**Windows**)
 
 ```powershell
-nvm install 16.14.0
-nvm use 16.14.0
+nvm install 16.14.2
+nvm use 16.14.2
 ```
 
 :sparkles:

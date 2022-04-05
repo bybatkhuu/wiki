@@ -99,7 +99,7 @@ python -V
 pip -V
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
 ## INSTALLATION COMPLETE
 

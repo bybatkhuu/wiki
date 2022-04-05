@@ -165,7 +165,7 @@ nvidia-smi
 systemctl status nvidia-persistenced.service
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
 ## INSTALLATION COMPLETE
 
