@@ -146,7 +146,7 @@ export NVCC="${CUDA_PATH}/bin/nvcc"
 export CFLAGS="-I${CUDA_PATH}/include ${CFLAGS}"
 ```
 
-save changes and exit from file editor.
+save changes and exit from the file editor.
 
 ```bash
 # 5. Load .bashrc file to init environment variables into the current bash session:
@@ -257,7 +257,7 @@ export PATH="${TENSORRT_VERSION}/bin:${PATH}"
 export LD_LIBRARY_PATH="${TENSORRT_PATH}/lib:${LD_LIBRARY_PATH}"
 ```
 
-save changes and exit from file editor.
+save changes and exit from the file editor.
 
 ```bash
 # Load .bashrc file to init environment variables into current bash session:

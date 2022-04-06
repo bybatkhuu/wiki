@@ -2,13 +2,13 @@
 
 ## Official pages
 
-* Install Docker Engine on Ubuntu - [https://docs.docker.com/engine/install/ubuntu/#installation-methods](https://docs.docker.com/engine/install/ubuntu/#installation-methods)
-* Docker install script for most Linux distros - [https://github.com/docker/docker-install](https://github.com/docker/docker-install)
-* NVIDIA Docker installation guide for most Linux distros - [https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit)
-* Post-installation steps for Linux - [https://docs.docker.com/engine/install/linux-postinstall](https://docs.docker.com/engine/install/linux-postinstall)
-* Install Docker Compose - [https://docs.docker.com/compose/install/#install-compose](https://docs.docker.com/compose/install/#install-compose)
-* Docker Compose github releases - [https://github.com/docker/compose/releases](https://github.com/docker/compose/releases)
-* Compose V2 - [https://docs.docker.com/compose/cli-command/#install-on-linux](https://docs.docker.com/compose/cli-command/#install-on-linux)
+- Install Docker Engine on Ubuntu: [https://docs.docker.com/engine/install/ubuntu/#installation-methods](https://docs.docker.com/engine/install/ubuntu/#installation-methods)
+- Docker install script for most Linux distros: [https://github.com/docker/docker-install](https://github.com/docker/docker-install)
+- NVIDIA Docker installation guide for most Linux distros: [https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit)
+- Post-installation steps for Linux: [https://docs.docker.com/engine/install/linux-postinstall](https://docs.docker.com/engine/install/linux-postinstall)
+- Install Docker Compose: [https://docs.docker.com/compose/install/#install-compose](https://docs.docker.com/compose/install/#install-compose)
+- Docker Compose github releases: [https://github.com/docker/compose/releases](https://github.com/docker/compose/releases)
+- Compose V2: [https://docs.docker.com/compose/cli-command/#install-on-linux](https://docs.docker.com/compose/cli-command/#install-on-linux)
 
 ---
 
@@ -48,9 +48,9 @@ docker images
 
 ### 1.2. [Only for GPU] Install NVIDIA Docker
 
-* Skip this step, if you don't have NVIDIA GPU!
-* **[REQUIRED]** Install NVIDIA GPU driver: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
-* For Ubuntu/Debian-based Linux distros:
+- Skip this step, if you don't have NVIDIA GPU!
+- **[REQUIRED]** Install NVIDIA GPU driver: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
+- For Ubuntu/Debian-based Linux distros:
 
 ```bash
 ## [IMPORTANT] Only for Ubuntu/Debian-based linux
@@ -95,6 +95,8 @@ For example:
 }
 ```
 
+save changes and exit from the file editor.
+
 ```bash
 # Restart docker service:
 sudo systemctl daemon-reload
@@ -120,6 +122,8 @@ and add the following `log-opts` into the `/etc/docker/daemon.json` file:
     }
 }
 ```
+
+save changes and exit from the file editor.
 
 ```bash
 # Restart docker service:
@@ -182,6 +186,8 @@ For example:
 }
 ```
 
+save changes and exit from the file editor.
+
 ```bash
 # Copy the current docker data directory to the new directory:
 sudo rsync -a /var/lib/docker/ [NEW_STORAGE_PATH]/docker/data-root
@@ -220,6 +226,6 @@ source ~/.bashrc
 
 ## References
 
-* Docker supported platforms (OS): [https://docs.docker.com/engine/install](https://docs.docker.com/engine/install)
-* Install NVIDIA GPU driver - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
-* Change docker data root directory - [https://tienbm90.medium.com/how-to-change-docker-root-data-directory-89a39be1a70b](https://tienbm90.medium.com/how-to-change-docker-root-data-directory-89a39be1a70b)
+- Docker supported platforms (OS): [https://docs.docker.com/engine/install](https://docs.docker.com/engine/install)
+- Install NVIDIA GPU driver: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
+- Change docker data root directory: [https://tienbm90.medium.com/how-to-change-docker-root-data-directory-89a39be1a70b](https://tienbm90.medium.com/how-to-change-docker-root-data-directory-89a39be1a70b)

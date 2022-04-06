@@ -4,15 +4,15 @@ NVM is a tool for managing multiple versions of Node.js.
 
 ## Features
 
-* Cross-platform
-* Node.js
-* Manager for multiple versions of Node.js, npm, and yarn
-* Multiple Node.js environments
+- Cross-platform
+- Node.js
+- Manager for multiple versions of Node.js, npm, and yarn
+- Multiple Node.js environments
 
 ## Official pages
 
-* NVM: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
-* NVM for Windows: [https://github.com/coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows)
+- NVM: [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm)
+- NVM for Windows: [https://github.com/coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows)
 
 ---
 
@@ -76,7 +76,7 @@ npm cache clean --force
 
 ### 1. Download and install **NVM-Windows (v1.1.9)**
 
-* Downloads: [https://github.com/coreybutler/nvm-windows/releases](https://github.com/coreybutler/nvm-windows/releases)
+- Downloads: [https://github.com/coreybutler/nvm-windows/releases](https://github.com/coreybutler/nvm-windows/releases)
 
 ### 2. Install **Node.js** (**Windows**)
 
@@ -93,5 +93,5 @@ nvm use 16.14.2
 
 ## References
 
-* Install NVM on Ubuntu 18.04: [https://nbanzyme.medium.com/easy-way-to-install-nvm-on-ubuntu-18-04-2cfb19ee5391](https://nbanzyme.medium.com/easy-way-to-install-nvm-on-ubuntu-18-04-2cfb19ee5391)
-* Install NVM macOS: [https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/](https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/)
+- Install NVM on Ubuntu 18.04: [https://nbanzyme.medium.com/easy-way-to-install-nvm-on-ubuntu-18-04-2cfb19ee5391](https://nbanzyme.medium.com/easy-way-to-install-nvm-on-ubuntu-18-04-2cfb19ee5391)
+- Install NVM macOS: [https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/](https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/)

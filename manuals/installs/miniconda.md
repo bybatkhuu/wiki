@@ -4,17 +4,17 @@ The clean and light version of the anaconda.
 
 ## Features
 
-* Cross-platform
-* Python
-* Conda
-* Miniforge
-* Multiple environments
+- Cross-platform
+- Python
+- Conda
+- Miniforge
+- Multiple environments
 
 ## Official pages
 
-* Miniconda - [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
-* Install on Linux - [https://conda.io/projects/conda/en/latest/user-guide/install/linux.html](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
-* Miniforge - [https://github.com/conda-forge/miniforge](https://github.com/conda-forge/miniforge)
+- Miniconda: [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+- Install on Linux: [https://conda.io/projects/conda/en/latest/user-guide/install/linux.html](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+- Miniforge: [https://github.com/conda-forge/miniforge](https://github.com/conda-forge/miniforge)
 
 ---
 
@@ -22,8 +22,8 @@ The clean and light version of the anaconda.
 
 ### 1. Download and install **Miniconda (v3)**
 
-* For **Windows**: [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
-* For **Linux** or **macOS**:
+- For **Windows**: [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+- For **Linux** or **macOS**:
 
 ```sh
 ## Recommended path to install Miniconda:
@@ -105,50 +105,37 @@ pip -V
 
 ---
 
-## Usage
-
-### Viewing a list of the packages in a conda environment
+## Command usage
 
 ```sh
+## Viewing a list of the packages in a conda environment:
 conda list
 
 # Or list packages of other conda environment:
 conda list -n py38
-```
 
-### Viewing a list of conda environments
 
-```sh
+## Viewing a list of conda environments:
 conda env list
-```
 
-### Creating environment variables associated with Conda environments
 
-```sh
+## Creating environment variables associated with Conda environments:
 conda env config vars set PYTHONPATH="${PWD}:${PYTHONPATH}"
-```
 
-### Exporting conda environment to environment.yml
 
-```sh
+## Exporting conda environment to environment.yml file:
 conda env export > environment.yml
-```
 
-### Creating conda environment from environment.yml file
 
-```sh
+## Creating conda environment from environment.yml file:
 conda env create -f environment.yml
-```
 
-### Cloning a conda environment
 
-```sh
+## Cloning a conda environment:
 conda create -y -n py38_clone --clone py38
-```
 
-### Removing conda environment
 
-```sh
+## Removing conda environment:
 conda remove -y -n py38 --all
 ```
 
@@ -156,5 +143,5 @@ conda remove -y -n py38 --all
 
 ## References
 
-* Miniconda installation - [https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
-* Managing conda environments - [https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+- Miniconda installation: [https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
+- Managing conda environments: [https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
