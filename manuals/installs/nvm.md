@@ -85,7 +85,7 @@ nvm install 16.14.2
 nvm use 16.14.2
 ```
 
-:sparkles:
+:thumbsup: :sparkles:
 
 ## INSTALLATION COMPLETE (**Windows**)
 
