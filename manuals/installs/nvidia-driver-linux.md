@@ -2,11 +2,11 @@
 
 ## Official pages
 
-* NVIDIA driver downloads - [https://www.nvidia.com/Download/Find.aspx?lang=en-us](https://www.nvidia.com/Download/Find.aspx?lang=en-us)
-* NVIDIA driver installation - [https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#runfile](https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#runfile)
-* NVIDIA driver configuration instructions - [https://download.nvidia.com/XFree86/Linux-x86_64/510.47.03/README/installdriver.html](https://download.nvidia.com/XFree86/Linux-x86_64/510.47.03/README/installdriver.html)
-* NVIDIA persistence - [https://docs.nvidia.com/deploy/driver-persistence/index.html#persistence-daemon](https://docs.nvidia.com/deploy/driver-persistence/index.html#persistence-daemon)
-* NVIDIA persistenced github - [https://github.com/NVIDIA/nvidia-persistenced](https://github.com/NVIDIA/nvidia-persistenced)
+- NVIDIA driver downloads: [https://www.nvidia.com/Download/Find.aspx?lang=en-us](https://www.nvidia.com/Download/Find.aspx?lang=en-us)
+- NVIDIA driver installation: [https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#runfile](https://docs.nvidia.com/datacenter/tesla/tesla-installation-notes/index.html#runfile)
+- NVIDIA driver configuration instructions: [https://download.nvidia.com/XFree86/Linux-x86_64/510.47.03/README/installdriver.html](https://download.nvidia.com/XFree86/Linux-x86_64/510.47.03/README/installdriver.html)
+- NVIDIA persistence: [https://docs.nvidia.com/deploy/driver-persistence/index.html#persistence-daemon](https://docs.nvidia.com/deploy/driver-persistence/index.html#persistence-daemon)
+- NVIDIA persistenced github: [https://github.com/NVIDIA/nvidia-persistenced](https://github.com/NVIDIA/nvidia-persistenced)
 
 ---
 
@@ -53,10 +53,10 @@ sudo apt-get install -y build-essential pkg-config libglvnd-dev mesa-utils wget 
 
 ### Download the appropriate Linux driver for the current NVIDIA GPU model
 
-* Search and download the latest verified stable NVIDIA GPU driver (**NVIDIA-Linux-x86_64-\*\*\*.run**) installer file from this link: **[https://www.nvidia.com/Download/Find.aspx?lang=en-us](https://www.nvidia.com/Download/Find.aspx?lang=en-us)**
-* **IMPORTANT!** **Download and use the .RUN file!** It can install the NVIDIA driver with the **DKMS module**, which is really important!
-* **IMPORTANT!** **Don't download or use the .DEB file!** It will **BREAK** the kernel eventually, especially when the kernel header/version/module is upgraded, which is so **FRUSTRATING!** Therefore, sometimes conflict with other application **dependencies** (dependency hell)...
-* If you're using a command-line interface, just copy the download link and use wget to download. For example:
+- Search and download the latest verified stable NVIDIA GPU driver (**NVIDIA-Linux-x86_64-\*\*\*.run**) installer file from this link: **[https://www.nvidia.com/Download/Find.aspx?lang=en-us](https://www.nvidia.com/Download/Find.aspx?lang=en-us)**
+- **IMPORTANT!** **Download and use the .RUN file!** It can install the NVIDIA driver with the **DKMS module**, which is really important!
+- **IMPORTANT!** **Don't download or use the .DEB file!** It will **BREAK** the kernel eventually, especially when the kernel header/version/module is upgraded, which is so **FRUSTRATING!** Therefore, sometimes conflict with other application **dependencies** (dependency hell)...
+- If you're using a command-line interface, just copy the download link and use wget to download. For example:
 
 ```bash
 mkdir -v ~/Downloads
@@ -72,10 +72,10 @@ wget https://us.download.nvidia.com/XFree86/Linux-x86_64/510.54/NVIDIA-Linux-x86
 
 #### [IMPORTANT] Change GUI environment to console environment
 
-* **Skip this step to 11, if you're not using a GUI environment and already using a console environment or SSH**
-* **TIP:** From here you're going to enter the console environment, so you need to write down these below commands on some text file to read from command-line or note on somewhere!
-* You can change the GUI environment to a virtual console environment by pressing these keyboard buttons: **Ctrl + Alt + F1/F3**
-* Or by entering the Linux command:
+- **Skip this step to 11, if you're not using a GUI environment and already using a console environment or SSH**
+- **TIP:** From here you're going to enter the console environment, so you need to write down these below commands on some text file to read from command-line or note on somewhere!
+- You can change the GUI environment to a virtual console environment by pressing these keyboard buttons: **Ctrl + Alt + F1/F3**
+- Or by entering the Linux command:
 
 ```bash
 # 10. IMPORTANT! Entering into virtual console environment:
@@ -84,7 +84,7 @@ sudo chvt 1
 sudo chvt 3
 ```
 
-* Enter username and password to log in to a console environment
+- Enter username and password to log in to a console environment
 
 #### Stop GUI processes to prepare the installation of the NVIDIA GPU driver
 
@@ -110,9 +110,9 @@ chmod +x ./NVIDIA-Linux-x86_64-510.54.run
 
 ### Install NVIDIA driver.run file
 
-* **IMPORTANT!** (**--dkms**) Register Nvidia driver to the DKMS for future kernel upgrade.
-* **IMPORTANT!** (**--no-x-check**) Disable the X11 config checker to prevent triggering X11 (GUI) processes while installing the driver.
-* **IMPORTANT!** (**--no-cc-version-check**) Disable the C/C++ version checker to prevent install error occurs when the DKMS C/C++ version is not matching with the current installed C/C++ version!
+- **IMPORTANT!** (**--dkms**) Register Nvidia driver to the DKMS for future kernel upgrade.
+- **IMPORTANT!** (**--no-x-check**) Disable the X11 config checker to prevent triggering X11 (GUI) processes while installing the driver.
+- **IMPORTANT!** (**--no-cc-version-check**) Disable the C/C++ version checker to prevent install error occurs when the DKMS C/C++ version is not matching with the current installed C/C++ version!
 
 ```bash
 # 14. IMPORTANT! Install nvidia driver with appropriate arguments:
@@ -121,10 +121,10 @@ sudo ./NVIDIA-Linux-x86_64-[DRIVER_VERSION].run --no-x-check --no-cc-version-che
 sudo ./NVIDIA-Linux-x86_64-510.54.run --no-x-check --no-cc-version-check --dkms
 ```
 
-* Select 'Continue installation' on the warning message.
-* **IMPORTANT!** Select '**Yes**' for the register of the DKMS kernel module.
-* Select '**No**' for 32-bit compatibility installation OR select '**OK**' when a 32-bit compatibility error appears.
-* **IMPORTANT!** Select '**No**' when it asks to automatically update your X configuration file.
+- Select 'Continue installation' on the warning message.
+- **IMPORTANT!** Select '**Yes**' for the register of the DKMS kernel module.
+- Select '**No**' for 32-bit compatibility installation OR select '**OK**' when a 32-bit compatibility error appears.
+- **IMPORTANT!** Select '**No**' when it asks to automatically update your X configuration file.
 
 ```bash
 # 15. Remove downloaded file:
@@ -186,8 +186,8 @@ sudo pip3 install nvitop
 nvitop -m full
 ```
 
-* [https://pypi.org/project/nvitop](https://pypi.org/project/nvitop)
-* [https://github.com/XuehaiPan/nvitop](https://github.com/XuehaiPan/nvitop)
+- [https://pypi.org/project/nvitop](https://pypi.org/project/nvitop)
+- [https://github.com/XuehaiPan/nvitop](https://github.com/XuehaiPan/nvitop)
 
 ### :bar_chart: nvtop
 
@@ -214,7 +214,7 @@ cd ../.. && rm -rf nvtop
 nvtop
 ```
 
-* [https://github.com/Syllo/nvtop](https://github.com/Syllo/nvtop)
+- [https://github.com/Syllo/nvtop](https://github.com/Syllo/nvtop)
 
 ---
 
