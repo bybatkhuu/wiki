@@ -121,7 +121,7 @@ pm2 save
 pm2 --help
 ```
 
-PM2 Help:
+PM2 help:
 
 ```txt
   Usage: pm2 [cmd] app
