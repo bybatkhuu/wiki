@@ -54,7 +54,7 @@ ldd --version
 * **[IMPORTANT]** Search and check the **latest stable NVIDIA driver version** for **your GPU model(s)**:
     * NVIDIA driver downloads - [https://www.nvidia.com/Download/Find.aspx?lang=en-us](https://www.nvidia.com/Download/Find.aspx?lang=en-us)
 * **[IMPORTANT]** Check the **compatibility** of the **NVIDIA driver version** with **CUDA versions**:
-    * CUDA release note -[https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
+    * CUDA release note - [https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html)
     * CUDA compatibility PDF - [https://docs.nvidia.com/pdf/CUDA_Compatibility.pdf](https://docs.nvidia.com/pdf/CUDA_Compatibility.pdf)
     * CUDA compatibility - [https://docs.nvidia.com/deploy/cuda-compatibility/#minor-version-compatibility](https://docs.nvidia.com/deploy/cuda-compatibility/#minor-version-compatibility)
 * **[IMPORTANT]** Check **system requirements** for **CUDA versions**:
@@ -62,7 +62,7 @@ ldd --version
     * CUDA older versions archive - [https://developer.nvidia.com/cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive)
 * **[RECOMMENDED]** Check the **compute capability** of **your GPU model(s)**:
     * GPU compute capability - [https://developer.nvidia.com/cuda-gpus](https://developer.nvidia.com/cuda-gpus)
-    * CUDA wikipedia - [https://en.wikipedia.org/wiki/CUDA](https://en.wikipedia.org/wiki/CUDA)
+    * CUDA Wikipedia - [https://en.wikipedia.org/wiki/CUDA](https://en.wikipedia.org/wiki/CUDA)
 * **[RECOMMENDED]** Check the **cuDNN version** with **compute capability** of **your GPU model(s)**:
     * cuDNN support matrix - [https://docs.nvidia.com/deeplearning/cudnn/support-matrix/index.html](https://docs.nvidia.com/deeplearning/cudnn/support-matrix/index.html)
 * *[OPTIONAL]* Check the **compatibility** of **TensorRT versions** with **CUDA versions** and **cuDNN versions**:
