@@ -1,7 +1,7 @@
 ---
 title: Install Docker and Docker Compose on Linux
 description: This is a manual for installing Docker and Docker Compose on Linux
-tags: 'docker, compose, linux, nvidiadocker'
+tags: 'docker, compose, nvidiadocker, linux'
 cover_image: 'https://raw.githubusercontent.com/bybatkhuu/wiki/main/assets/images/docker.png'
 canonical_url: null
 published: true

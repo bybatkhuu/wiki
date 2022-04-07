@@ -79,7 +79,7 @@ npm cache clean --force
 
 :thumbsup: :sparkles:
 
-## INSTALLATION COMPLETE (Linux, macOS)
+## INSTALLATION COMPLETE (**Linux**, **macOS**)
 
 ---
 
