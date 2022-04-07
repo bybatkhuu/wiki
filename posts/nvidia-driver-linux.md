@@ -4,7 +4,7 @@ description: ''
 tags: 'NVIDIA, GPU, Driver, Linux'
 cover_image: ''
 canonical_url: null
-published: false
+published: true
 id: 1047324
 ---
 
