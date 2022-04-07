@@ -5,6 +5,8 @@ tags: 'docker, compose, linux, nvidiadocker'
 cover_image: 'https://raw.githubusercontent.com/bybatkhuu/wiki/main/assets/images/docker.png'
 canonical_url: null
 published: true
+id: 1047419
+date: '2022-04-07T08:38:05Z'
 ---
 
 ## Official pages
