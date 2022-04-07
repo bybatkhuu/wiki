@@ -1,9 +1,18 @@
-# PM2 (Process Manager 2)
+---
+title: Install PM2 (Process Manager 2)
+description: This is a manual for installing PM2
+tags: 'pm2, process-manager, monitoring, cross-platform'
+cover_image: 'https://raw.githubusercontent.com/bybatkhuu/wiki/main/assets/images/pm2.png'
+canonical_url: null
+published: true
+---
+
+## PM2 (Process Manager 2)
 
 Process manager tool based on Node.js.
 It's a tool that allows you to manage your applications (Node.js/python/binary/shell script/etc...).
 
-## Features
+### Features
 
 - Start/stop/restart applications on demand
 - Easy to manage multiple processes

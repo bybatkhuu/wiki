@@ -1,8 +1,17 @@
-# Miniconda (Conda)
+---
+title: Install Miniconda (Conda) and Python
+description: This is a manual for installing Miniconda and Python.
+tags: 'miniconda, conda, python, cross-platform'
+cover_image: 'https://raw.githubusercontent.com/bybatkhuu/wiki/main/assets/images/python.jpg'
+canonical_url: null
+published: true
+---
+
+## Miniconda (Conda)
 
 The clean and light version of the anaconda.
 
-## Features
+### Features
 
 - Cross-platform
 - Python
