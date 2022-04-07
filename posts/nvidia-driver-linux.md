@@ -7,8 +7,6 @@ canonical_url: null
 published: false
 ---
 
-# Install NVIDIA GPU driver on Linux (Ubuntu/Debian)
-
 ## Official pages
 
 - NVIDIA driver downloads: [https://www.nvidia.com/Download/Find.aspx?lang=en-us](https://www.nvidia.com/Download/Find.aspx?lang=en-us)
