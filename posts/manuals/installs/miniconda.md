@@ -1,10 +1,12 @@
 ---
 title: Install Miniconda (Conda) and Python
 description: This is a manual for installing Miniconda and Python.
-tags: 'miniconda, conda, python, cross-platform'
+tags: 'miniconda, conda, python, crossplatform'
 cover_image: 'https://raw.githubusercontent.com/bybatkhuu/wiki/main/assets/images/python.jpg'
 canonical_url: null
 published: true
+id: 1047412
+date: '2022-04-07T08:29:09Z'
 ---
 
 ## Miniconda (Conda)

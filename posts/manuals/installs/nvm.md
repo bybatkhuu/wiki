@@ -1,10 +1,12 @@
 ---
 title: Install NVM (Node Version Manager) and Node.js
 description: This is a manual for installing NVM and Node.js
-tags: 'nvm, node.js, javascript, cross-platform'
+tags: 'nvm, node, javascript, crossplatform'
 cover_image: 'https://raw.githubusercontent.com/bybatkhuu/wiki/main/assets/images/nvm.png'
 canonical_url: null
 published: true
+id: 1047409
+date: '2022-04-07T08:27:46Z'
 ---
 
 ## NVM (Node Version Manager)

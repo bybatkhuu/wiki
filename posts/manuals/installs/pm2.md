@@ -1,10 +1,12 @@
 ---
 title: Install PM2 (Process Manager 2)
 description: This is a manual for installing PM2
-tags: 'pm2, process-manager, monitoring, cross-platform'
+tags: 'pm2, processmanager, monitoring, crossplatform'
 cover_image: 'https://raw.githubusercontent.com/bybatkhuu/wiki/main/assets/images/pm2.png'
 canonical_url: null
 published: true
+id: 1047413
+date: '2022-04-07T08:29:16Z'
 ---
 
 ## PM2 (Process Manager 2)

@@ -1,10 +1,12 @@
 ---
 title: Install NVIDIA CUDA on Linux
 description: This is a manual for installing the NVIDIA CUDA on Linux.
-tags: 'cuda, deep_learning, gpu, linux'
+tags: 'cuda, deeplearning, gpu, linux'
 cover_image: 'https://raw.githubusercontent.com/bybatkhuu/wiki/main/assets/images/cuda.png'
 canonical_url: null
 published: true
+id: 1047408
+date: '2022-04-07T08:27:45Z'
 ---
 
 ## Official pages
