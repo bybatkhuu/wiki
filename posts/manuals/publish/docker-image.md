@@ -5,8 +5,8 @@
 ### 1. Prerequisites
 
 * Install **docker** and **docker-compose (v.2.2.3)**:
-    * Linux - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-linux.md)
-    * Windows - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-windows.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-windows.md)
+    * Linux - [https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/docker-linux.md](https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/docker-linux.md)
+    * Windows - [https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/docker-windows.md](https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/docker-windows.md)
     * Offline binaries - [https://docs.docker.com/engine/install/binaries](https://docs.docker.com/engine/install/binaries)
 
 ### 2. Create repository

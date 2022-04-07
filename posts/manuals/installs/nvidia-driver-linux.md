@@ -1,4 +1,11 @@
-# Install NVIDIA GPU driver on Linux (Ubuntu/Debian)
+---
+title: Install NVIDIA GPU driver on Linux (Ubuntu/Debian)
+description: A simple test article
+tags: 'nvidia, gpu, driver, linux'
+cover_image: ./assets/images/nvidia-gpus.jpeg
+canonical_url: null
+published: false
+---
 
 ## Official pages
 

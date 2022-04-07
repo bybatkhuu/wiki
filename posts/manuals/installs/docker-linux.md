@@ -49,7 +49,7 @@ docker images
 ### 1.2. [Only for GPU] Install NVIDIA Docker
 
 - Skip this step, if you don't have NVIDIA GPU!
-- **[REQUIRED]** Install NVIDIA GPU driver: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
+- **[REQUIRED]** Install NVIDIA GPU driver: [https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/nvidia-driver-linux.md)
 - For Ubuntu/Debian-based Linux distros:
 
 ```bash
@@ -227,5 +227,5 @@ source ~/.bashrc
 ## References
 
 - Docker supported platforms (OS): [https://docs.docker.com/engine/install](https://docs.docker.com/engine/install)
-- Install NVIDIA GPU driver: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
+- Install NVIDIA GPU driver: [https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/nvidia-driver-linux.md)
 - Change docker data root directory: [https://tienbm90.medium.com/how-to-change-docker-root-data-directory-89a39be1a70b](https://tienbm90.medium.com/how-to-change-docker-root-data-directory-89a39be1a70b)

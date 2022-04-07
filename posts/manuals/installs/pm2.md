@@ -27,7 +27,7 @@ It's a tool that allows you to manage your applications (Node.js/python/binary/s
 ## Prerequisites
 
 - **Node.js**
-    - **[RECOMMENDED] NVM**: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvm.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvm.md)
+    - **[RECOMMENDED] NVM**: [https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/nvm.md](https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/nvm.md)
 
 ## Installation
 

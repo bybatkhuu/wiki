@@ -17,7 +17,7 @@
 ### 1. Prerequisites
 
 * **Python (>= v3.7.11)**
-    * **[RECOMMENDED] Miniconda (v3)**: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/miniconda.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/miniconda.md)
+    * **[RECOMMENDED] Miniconda (v3)**: [https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/miniconda.md](https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/miniconda.md)
 * **Pip (>= v20)**
 
 ### 2. Install required packages

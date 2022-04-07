@@ -75,7 +75,7 @@ ldd --version
 
 ### Install NVIDIA GPU driver
 
-- **[REQUIRED]** Install NVIDIA GPU Driver: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
+- **[REQUIRED]** Install NVIDIA GPU Driver: [https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/nvidia-driver-linux.md)
 
 ## Install CUDA toolkit
 

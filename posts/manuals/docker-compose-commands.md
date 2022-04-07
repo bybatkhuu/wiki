@@ -14,8 +14,8 @@
 ## Prerequisites
 
 * Install **docker** and **docker-compose (v.2.2.3)**:
-    * Linux - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-linux.md)
-    * Windows - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-windows.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/docker-windows.md)
+    * Linux - [https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/docker-linux.md](https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/docker-linux.md)
+    * Windows - [https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/docker-windows.md](https://github.com/bybatkhuu/wiki/blob/main/posts/manuals/installs/docker-windows.md)
     * Offline binaries - [https://docs.docker.com/engine/install/binaries](https://docs.docker.com/engine/install/binaries)
 
 ## Commands
@@ -175,7 +175,7 @@ Run 'docker compose COMMAND --help' for more information on a command.
 
 ## Docker command cheat sheet
 
-* Cheat sheet 2 - [https://github.com/bybatkhuu/wiki/blob/main/files/docker-cheat-sheet.2.pdf](https://github.com/bybatkhuu/wiki/blob/main/files/docker-cheat-sheet.2.pdf)
+* Cheat sheet 2 - [https://github.com/bybatkhuu/wiki/blob/main/assets/docker-cheat-sheet.2.pdf](https://github.com/bybatkhuu/wiki/blob/main/assets/docker-cheat-sheet.2.pdf)
 
 ---
 

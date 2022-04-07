@@ -48,7 +48,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 ### 3. Configure .vimrc
 
-* **TIP!**: If youn don't know about vim configuration, use sample **.vimrc** file - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/.vimrc](https://github.com/bybatkhuu/wiki/blob/main/files/samples/.vimrc)
+* **TIP!**: If youn don't know about vim configuration, use sample **.vimrc** file - [https://github.com/bybatkhuu/wiki/blob/main/assets/samples/.vimrc](https://github.com/bybatkhuu/wiki/blob/main/assets/samples/.vimrc)
 
 Edit the `~/.vimrc` file:
 

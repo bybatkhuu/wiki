@@ -2,7 +2,7 @@
 
 ## Download extensions list file
 
-* **vscode.extensions.txt** - [https://github.com/bybatkhuu/wiki/blob/main/files/samples/vscode.extensions.txt](https://github.com/bybatkhuu/wiki/blob/main/files/samples/vscode.extensions.txt)
+* **vscode.extensions.txt** - [https://github.com/bybatkhuu/wiki/blob/main/assets/samples/vscode.extensions.txt](https://github.com/bybatkhuu/wiki/blob/main/assets/samples/vscode.extensions.txt)
 
 ## Import extensions
 
