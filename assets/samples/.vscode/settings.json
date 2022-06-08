@@ -46,7 +46,6 @@
 		"editor.insertSpaces": false,
 		"editor.tabSize": 4
 	},
-	"terminal.integrated.inheritEnv": false,
 	"files.eol": "\n",
 	"files.trimTrailingWhitespace": true,
 	"files.associations":
@@ -56,7 +55,7 @@
 		"requirements*.txt": "pip-requirements",
 		"*Dockerfile*": "dockerfile",
 		".dockerignore": "ignore",
-		"*.py.back": "python"
+		"*.py.bak": "python"
 	},
 	"files.watcherExclude":
 	{
@@ -115,28 +114,10 @@
 		"**/*.bak": true,
 		"**/.bak.*": true
 	},
-	"settingsSync.ignoredSettings":
-	[
-		"workbench.colorTheme",
-		"editor.fontFamily",
-		"editor.fontSize",
-		"terminal.integrated.fontFamily",
-		"terminal.integrated.fontSize",
-		"remote.SSH.remotePlatform",
-		"python.pythonPath",
-		"python.defaultInterpreterPath",
-		"vscode_custom_css.imports",
-		"logViewer.watch",
-		"hediet.vscode-drawio.local-storage",
-		"hediet.vscode-drawio.theme"
-	],
-	"docker.showStartPage": false,
-	"remote.SSH.useFlock": false,
 	"python.languageServer": "Pylance",
 	"vsintellicode.modify.editor.suggestSelection": "disabled",
 	"git-graph.maxDepthOfRepoSearch": 4,
 	"javascript.suggest.autoImports": false,
 	"typescript.suggest.autoImports": false,
-	"glassit.alpha": 250,
 	"redhat.telemetry.enabled": false
 }
