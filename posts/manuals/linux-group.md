@@ -102,9 +102,9 @@ sudo gpasswd -d username group
 ### Remove group
 
 ```sh
-sudo groupdel -f [GROUP]
+sudo groupdel [GROUP]
 # For example:
-sudo groupdel -f group
+sudo groupdel group
 
 # Or
 sudo delgroup [GROUP]
